@@ -24,15 +24,41 @@
 
         </div>
         <div id="mailCheker" class="d-none mailSection">
-            <div class="mailCheker-wrapper d-flex flex-column gap-2">
-                <label for="emailInput"><h2 class="fw-bold">Inserisci la tua mail</h2></label>
-                <input type="email" id="emailInput" placeholder="JonSnow@winterfell.com" class="rounded-3 border-0 text-center">
+            <form id="mailForm" class="mailCheker-wrapper d-flex flex-column gap-2 align-items-center">
+                <label for="emailInput"><h2 class="fw-bold">Inserisci la tua email</h2></label>
+                <input type="email" id="emailInput" placeholder="latuaemail@gmail.com" class="rounded-3 border-0 text-center px-3 mb-2">
+                <div id="mailFormBtns">
+                    <input id="btnSubmitMail" type="submit" value="Check" class="btn me-3">
+                    <button class="btn"><a href="./index.html">Torna indietro</a></button>
+                </div>
+            </form>
+            <div id="mailResult" class="d-flex justify-content-center align-items-center d-none flex-column">
+                <h2 class="fw-bolder mb-4">Benvenuto ora sei dei nostri!</h2>
+                <button class="btn"><a href="./index.html">Torna indietro </a></button>
             </div>
+</div>
+<div id="diceGame" class="d-none no-opacity">
+    <div class="diceGame-wrap d-flex flex-column justify-content-center align-items-center">
+        <h2 class="mb-5 fw-bold text-center">Vince chi ha il numero più grande</h2>
+        <div class="user-wins">
         </div>
-        <div id="diceGame" class="d-none gameSection">
-
+        <div id="dice-details" class="w-50 no-opacity d-flex justify-content-center flex-column align-items-center">
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <h4 class="my-3 me-4 d-inline-block"><strong>Il tuo</strong> numero è:<span class="ms-3 h3" id="userNumber"></span></h4>
+              <h4 class="my-3 d-inline-block"><strong>Il mio</strong> numero è :<span class="ms-3 h3" id="pcNumber"></span></h4>
+            </div>
+            <h4 class="my-5"><span class="ms-3 h3 fw-bold" id="winnerNumber"></span></h4>
+          </div>
+            <h4 class="my-5"><span class="ms-3 h3 fw-bold" id="winnerNumber"></span></h4>
+        </div>
+        <div id="diceBtns" class="d-flex mt-4 gap-3">
+            <button id="btnRoll" class="btn">Tira i dadi</button>
+            <button class="btn"><a href="./index.html">Torna indietro</a></button>
         </div>
     </div>
-    <script src="./js/script.js"></script>
+</div>
+</div>
+<script src="./js/utilities.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
