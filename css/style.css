@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Josefin Sans', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+}
+:root{
+  --primary-color: #ee0db2;
+  --blue: #b053d2;
+  --azzure: #a686a3;
+  --light-color: #F2EFDF;
+  --grey: #D8D9C5;
+}
+body{
+  background-image: url(https://images.prismic.io//intuzwebsite/d394de11-2b7f-4a72-a3e0-c876f7356a40_Main.png?w=1200&q=75&auto=format,compress&fm=png8);  
+  background-size: 1440px 830px;
+  background-repeat: no-repeat;
+}
+h1{
+  font-size: 3rem;
+  background: linear-gradient(to right, var(--primary-color), var(--blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 700px;
+}
+.btn{
+  background-color: var(--primary-color);
+  color: white;
+  transition: all 1s ease-in-out;
+  margin-right: 400px;
+ 
+}
+
+#btnCheck{
+  translate: 20%;
+}
+#btnDice{
+  translate: -150%;
+}
+.btn:hover{
+  background-color: var(--blue);
+  color: white;
+}
+/* sezione mail e game */
+.mailSection, .gameSection{
+  opacity: 0;
+  transition: all 1s;
+}
